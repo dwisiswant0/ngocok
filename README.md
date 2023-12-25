@@ -8,6 +8,8 @@ ngrok Collaborator Link — yet another Burp Collaborator alternative for free w
 
 > [!TIP]
 > If `ngrok` is already configured on your machine with `ngrok config add-authtoken`, you can [install](#installation) and run it directly.
+>
+> To find the location of the configuration file, consult the [ngrok Agent Configuration File](https://ngrok.com/docs/agent/config/) documentation page.
 
 That's it!
 
