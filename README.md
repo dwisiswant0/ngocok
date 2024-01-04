@@ -6,10 +6,11 @@ ngrok Collaborator Link — yet another Burp Collaborator alternative for free w
 
 * **ngrok authtoken**: Authentication token from your ngrok account is required to establish a ngrok tunnel. See [Your Authtoken](https://dashboard.ngrok.com/get-started/your-authtoken).
 
+> [!IMPORTANT]
+> If `ngrok` is already configured on your machine with `ngrok config add-authtoken`, you can go ahead to the [installation](#installation) section.
+
 > [!TIP]
-> If `ngrok` is already configured on your machine with `ngrok config add-authtoken`, you can [install](#installation) and run it directly.
->
-> To find the location of the configuration file, consult the [ngrok Agent Configuration File](https://ngrok.com/docs/agent/config/) documentation page.
+> To find the location of the configuration file, execute `ngrok config check` or consult the [ngrok Agent Configuration File](https://ngrok.com/docs/agent/config/) documentation page.
 
 That's it!
 
@@ -46,7 +47,7 @@ Here are the supported options:
 | `--unstrip`       	| Unstrip `X-Forwarded-{For,Host,Proto}` headers    	| `false`     	|
 | `-o`/`--output`   	| Log incoming requests to a file instead of stdout 	| ""          	|
 
-> [!IMPORTANT]
+> [!CAUTION]
 > Using a `-t`/`--token` flag will takes precedence over the `NGROK_AUTHTOKEN` environment variable, and using `NGROK_AUTHTOKEN` environment variable will takes precedence over the ngrok config file<sup>[[?](#prerequisites)]</sup>.
 
 ### Examples
